@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat - Compteur de Dodo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs"></div>
+    <main class="container">
+        <div class="glass-card result-card">
+            <a href="index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Choisir une autre date
+            </a>
+
+            <div id="resultContent">
+                <p class="pre-text">Il reste encore</p>
+                <div class="counter-wrapper">
+                    <span id="dodoCount" class="counter">0</span>
+                </div>
+                <p class="post-text" id="dodoLabel">dodos</p>
+                <p class="target-date-display">Jusqu'au <span id="targetDateDisplay">...</span></p>
+            </div>
+
+            <div id="errorContent" class="hidden">
+                <h2>Oups! 😕</h2>
+                <p>La date semble invalide ou passée.</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
